@@ -4,7 +4,7 @@ class Cat {
 
     this.imgURL = imgURL;
 
-    this.divHTML = `<div id="${this.name}" class="${this.name}" cat-page><div>`;
+    this.divHTML = `<div id="${this.name}" class="${this.name} cat-page"><div>`;
 
     this.asideLiHTML = `<li class="${this.name}"><a href="#${this.name}">${this.name}</a></li>`;
 
