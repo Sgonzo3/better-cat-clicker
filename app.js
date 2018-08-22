@@ -10,7 +10,7 @@ class Cat {
 
     this.nameHTML = `<h2 class="${this.name}">${this.name}</h2>`;
 
-    this.imgHTML = `<div class="image-cropper"><img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}"><div>`;
+    this.imgHTML = `<img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}">`;
 
     this.clickCounterHTML = `<div>
       <span>Click Count: </span>

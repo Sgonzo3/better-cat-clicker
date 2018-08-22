@@ -29,12 +29,14 @@ aside {
   min-width: 48px;
   order: 1;
   border: solid black 1px;
-
 }
 
 img {
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  width: 300px;
+  border: solid lightGrey 10px;
+  box-shadow: 10px 10px 10px black;
 }
 
 span {
