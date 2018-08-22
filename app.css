@@ -1,5 +1,7 @@
 Body{
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 header {
@@ -37,4 +39,14 @@ img {
 
 span {
   font-size: 5em;
+}
+
+footer {
+  min-height: 48px;
+  width: 100%;
+  z-index: 1000;
+  order: 100;
+  text-align: center;
+  margin: 0;
+  border: solid black 1px;
 }
