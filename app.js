@@ -2,7 +2,7 @@ class Cat {
   constructor(name, imgURL) {
     this.name = name;
     this.imgURL = imgURL;
-    this.divHTML = `<div class=${this.name}><div>`;
+    this.divHTML = `<div class=${this.name} cat-page><div>`;
     this.asideLiHTML = `<li class="${this.name}">${this.name}</li>`;
     this.nameHTML = `<h2 class="${this.name}">${this.name}</h2>`;
     this.imgHTML = `<div class="image-cropper"><img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}"><div>`;
@@ -13,7 +13,7 @@ class Cat {
   }
 
   createDiv() {
-    document.body.innerHTML += this.divHTML;
+    document.querySelector('main').innerHTML += this.divHTML;
   }
 
   createAside() {
