@@ -4,13 +4,13 @@ class Cat {
 
     this.imgURL = imgURL;
 
-    this.divHTML = `<div id="${this.name}" class="${this.name}" cat-page><div>`;
+    this.divHTML = `<div id="${this.name}" class="${this.name} cat-page"><div>`;
 
     this.asideLiHTML = `<li class="${this.name}"><a href="#${this.name}">${this.name}</a></li>`;
 
     this.nameHTML = `<h2 class="${this.name}">${this.name}</h2>`;
 
-    this.imgHTML = `<div class="image-cropper"><img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}"><div>`;
+    this.imgHTML = `<img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}">`;
 
     this.clickCounterHTML = `<div>
       <span>Click Count: </span>

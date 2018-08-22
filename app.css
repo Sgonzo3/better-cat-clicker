@@ -2,39 +2,75 @@ Body{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+  background-color: rgba(235, 235, 235, 0.8);
+  color: rgba(235, 175, 35, 1);
 }
 
 header {
-  min-height: 48px;
+  height: 100vh;
   width: 100%;
-  z-index: 1000;
-  order: 0;
-  position: absolute;
+  padding-top: 45vh;
   text-align: center;
   margin: 0;
-  border: solid black 1px;
-
+  background-color: rgba(32, 34, 36, 1);
+  color: rgba(235, 175, 35, 1);
 }
 
 main {
   height: 100%;
-  width: 4fr;
+  width: 100%;
   order: 2;
-  border: solid black 1px;
+  margin: auto;
 }
 
 aside {
-  height: 100%;
-  width: 1fr;
-  min-width: 48px;
-  order: 1;
-  border: solid black 1px;
+  padding: 1em;
+  height: 100vh;
+  width: 15%;
+  font-size: 2em;
+  order: 0;
+  text-align: left;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  background-color: rgba(32, 34, 36, 1);
+  color: rgba(235, 175, 35, 1);
 
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(235, 175, 35, 1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1em;
+}
+
+ul.available-cats li {
+  height: 20vh;
+}
+
+.cat-page {
+  height: 100vh;
+  margin: 3em;
+}
+
 img {
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  width: 300px;
+  border: solid lightGrey 10px;
+  box-shadow: 10px 10px 10px black;
 }
 
 span {
@@ -48,5 +84,4 @@ footer {
   order: 100;
   text-align: center;
   margin: 0;
-  border: solid black 1px;
 }
