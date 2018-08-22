@@ -1,11 +1,17 @@
 class Cat {
   constructor(name, imgURL) {
     this.name = name;
+
     this.imgURL = imgURL;
-    this.divHTML = `<div class=${this.name} cat-page><div>`;
-    this.asideLiHTML = `<li class="${this.name}">${this.name}</li>`;
+
+    this.divHTML = `<div id="${this.name}" class="${this.name}" cat-page><div>`;
+
+    this.asideLiHTML = `<li class="${this.name}"><a href="#${this.name}">${this.name}</a></li>`;
+
     this.nameHTML = `<h2 class="${this.name}">${this.name}</h2>`;
+
     this.imgHTML = `<div class="image-cropper"><img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}"><div>`;
+
     this.clickCounterHTML = `<div>
       <span>Click Count: </span>
       <span class="${this.name} counter">0</span>
