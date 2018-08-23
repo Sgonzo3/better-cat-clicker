@@ -4,6 +4,8 @@ class Cat {
 
     this.imgURL = imgURL;
 
+    this.count = 0;
+
     this.divHTML = `<div id="${this.name}" class="${this.name} cat-page"><div>`;
 
     this.asideLiHTML = `<li class="${this.name}"><a href="#${this.name}">${this.name}</a></li>`;
@@ -14,8 +16,10 @@ class Cat {
 
     this.clickCounterHTML = `<div>
       <span>Click Count: </span>
-      <span class="${this.name} counter">0</span>
+      <span class="${this.name} counter">${this.count}</span>
     </div>`;
+
+
   }
 
   createDiv() {
@@ -39,7 +43,6 @@ class Cat {
   }
 
   clickCounter() {
-    this.count = document.querySelector(`span.${this.name}`).innerText;
     this.count++;
     document.querySelector(`span.${this.name}`).innerText = this.count;
   }
@@ -55,6 +58,7 @@ const cat5 = new Cat("Dirtbags", "images/dirtbags.jpg")
 
 allCats.push(cat1, cat2, cat3, cat4, cat5);
 
+// insert HTML for Cat data
 for (let cat of allCats) {
   cat.createDiv();
   cat.createAside();
