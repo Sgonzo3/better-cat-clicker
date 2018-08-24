@@ -46,6 +46,7 @@ class Cat {
   }
 }
 
+// if expanding to same name instances of cats remove this.name from id class declarations in Cat class
 let allCats = [];
 
 const cat1 = new Cat("Otto", "images/otto.jpg");
