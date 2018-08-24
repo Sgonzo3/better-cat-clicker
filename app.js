@@ -21,7 +21,7 @@ class Cat {
   }
 
   createDiv() {
-    document.querySelector('main').innerHTML += this.divHTML;
+    document.querySelector('main').innerHTML = this.divHTML;
   }
 
   createAside() {
