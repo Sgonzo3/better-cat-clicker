@@ -15,11 +15,9 @@ class Cat {
     this.imgHTML = `<img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}">`;
 
     this.clickCounterHTML = `<div>
-      <span>Click Count: </span>
+      <span>Clicks: </span>
       <span class="${this.name} counter">${this.count}</span>
     </div>`;
-
-
   }
 
   createDiv() {

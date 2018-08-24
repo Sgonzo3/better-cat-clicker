@@ -26,12 +26,11 @@ main {
   height: 100%;
   width: 100%;
   order: 2;
-  margin: auto;
 }
 
 aside {
-  padding: 1em;
-  height: 100vh;
+  height: 150vh;
+  min-width: 96px;
   width: 15%;
   font-size: 2em;
   order: 0;
@@ -40,7 +39,8 @@ aside {
   position: fixed;
   background-color: rgba(32, 34, 36, 1);
   color: rgba(235, 175, 35, 1);
-
+  /* overflow: scroll; */
+  word-wrap: break-word;
 }
 
 a:link {
@@ -54,12 +54,20 @@ a:visited {
 
 ul {
   list-style: none;
-  padding-left: 0;
-  margin: 1em;
+  margin: 0;
+  padding-left: 0.5em;
+  height: 100vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  overflow: auto;
 }
 
 ul.available-cats li {
-  height: 20vh;
+  /* height: 20vh; */
+  width: 100%;
+  margin: auto;
 }
 
 .cat-page {
