@@ -30,8 +30,7 @@ main {
 
 aside {
   height: 150vh;
-  min-width: 96px;
-  width: 15%;
+  width: 17%;
   font-size: 2em;
   order: 0;
   text-align: left;
@@ -60,8 +59,8 @@ ul {
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
-  flex-direction: column;
-  overflow: auto;
+  flex-wrap: wrap;
+  overflow: scroll;
 }
 
 ul.available-cats li {
