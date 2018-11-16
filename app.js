@@ -47,11 +47,12 @@ class Cat {
 
 let allCats = [];
 
+// cat name must be one word
 const cat1 = new Cat("Otto", "images/otto.jpg");
 const cat2 = new Cat("Niko", "images/niko.jpg");
 const cat3 = new Cat("Derp", "images/derp.jpg");
 const cat4 = new Cat("Misty", "images/misty.jpg");
-const cat5 = new Cat("Big Derp", "images/big-derp.jpg")
+const cat5 = new Cat("Big-Derp", "images/big-derp.jpg")
 
 allCats.push(cat1, cat2, cat3, cat4, cat5);
 
