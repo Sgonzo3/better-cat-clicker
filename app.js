@@ -21,15 +21,17 @@ class Cat {
 
     this.divHTML = `<div id="${this.name}" class="${this.name} cat-page"><div>`;
 
-    this.asideLiHTML = `<li class="${this.name}"><a href="#${this.name}">${this.name}</a></li>`;
+    this.asideLiHTML = `<li class="${this.name}"><a tabindex="1" href="#${this.name}">${this.name}</a></li>`;
 
-    this.nameHTML = `<h2 class="${this.name}">${this.name}</h2>`;
+    this.nameHTML = `<h2 class="${this.name} cat-title">${this.name}</h2>`;
 
-    this.imgHTML = `<img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}">`;
+    // this.imgHTML = `<img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}">`;
 
     this.clickCounterHTML = `<div>
-      <span class="${this.name} counter">${this.count}</span>
+      <span class="${this.name} counter cat-counter">${this.count}</span>
     </div>`;
+
+    this.imgHTML = `<img class="${this.name}" src="${this.imgURL}" alt="a picture of ${this.name}">`;
 
     this.adminMenuHTML =
       `<section class="admin-menu ${this.name}">
@@ -107,7 +109,7 @@ new Cat("Otto", "images/otto.jpg", 0);
 new Cat("Niko", "images/niko.jpg", 0);
 new Cat("Derp", "images/derp.jpg", 0);
 new Cat("Misty", "images/misty.jpg", 0);
-new Cat("Dirtbags", "images/dirtbags.jpg", 0);
+new Cat("Big-Derp", "images/big-derp.jpg", 0);
 
 // insert HTML for Cat data
 function initHTML() {
@@ -122,7 +124,6 @@ function initHTML() {
 }
 initHTML();
 
-// unique counter on each picture
 function initEvents() {
   for (let cat of allCats) {
     document.querySelector(`img.${cat.name}`).addEventListener('click', function() {
@@ -149,13 +150,3 @@ function initEvents() {
   }
 }
 initEvents();
-// inputs should edit the cat div display
-// cancel hides the menu again
-//  one function to toggle hidden classes on form and admin-button, use here and submit
-// submit redraws the page
-// * function div.admin qureyselector admin-form cat name
-// * cat.name, div.name, list name = admin form input
-// * cat.img src = admin form input
-// * cat. count = admin inoput form
-// * run all display methods again except create div, and aside just rename those to keep position
-//submit needs a function to redraw the area

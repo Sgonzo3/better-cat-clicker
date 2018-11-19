@@ -1,47 +1,59 @@
-Body{
-  display: flex;
-  flex-wrap: wrap;
+/* html {
+  height: 100%;
+  width: 100%;
+} */
+html, body{
   margin: 0;
   height: 100%;
   width: 100%;
   text-align: center;
-  position: relative;
   font-family: sans-serif;
   background-color: rgba(235, 235, 235, 0.8);
   color: rgba(235, 175, 35, 1);
+  overflow: auto;
 }
 
 header {
   height: 100vh;
   width: 100%;
-  padding: 10vh 15% 0 0;
-  text-align: ;
-  font-size: 5em;
-  margin: 0;
+  font-size: 9vh;
+  padding: auto;
+  margin: 0 0 0 0;
   background-color: rgba(32, 34, 36, 1);
-  color:rgba(235, 235, 235, 0.8);
+  color: rgba(235, 235, 235, 0.8);
+  overflow: hidden;
+  word-wrap: break-word;
 }
-
+h1 {
+  padding-left: 20vw;
+}
 main {
+  position: relative;
+  float: right;
+  /* top: 100vh; */
   height: 100%;
+  width: auto;
+  margin: 0;
   width: 100%;
-  order: 2;
-  padding-left: 17%;
-  /* text-align: right;
-  margin-right: 15%; */
+  height: auto;
+  /* overflow: scroll; */
+  /* background-color: red; */
 }
 
 aside {
   height: 150vh;
-  width: 17%;
+  width: 20vw;
+  /* would need to change padding elsewhere  */
+  /* min-width: 96px; */
   font-size: 2em;
-  order: 0;
   text-align: left;
   box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
   position: fixed;
+  top: 0;
+  float: left;
+  z-index: 1000;
   background-color: rgba(32, 34, 36, 1);
   color: rgba(235, 175, 35, 1);
-  /* overflow: scroll; */
   word-wrap: break-word;
 }
 
@@ -74,30 +86,35 @@ ul.available-cats li {
 
 .cat-page {
   height: 100vh;
-  margin: 3em 1em;
   text-align: left;
+  margin: 0 0 2em 25vw;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.cat-title {
+  font-size: 10vh;
+  /* width: auto; */
+  position: relative;
+  float: right;
+}
+
+.cat-counter {
+  font-size: 10vh;
+  /* position:  absolute;
+  bottom: 0; */
 }
 
 img {
-  width: 500px;
-  height: 500px;
+  /* max-height: 80%; */
+  max-height: 70%;
+  max-width: 70%;
+  /* height: auto; */
   border-radius: 50%;
   border: solid lightGrey 10px;
   box-shadow: 10px 10px 10px black;
-  float: none;
-}
-
-span {
-  font-size: 5em;
-}
-
-footer {
-  min-height: 48px;
-  width: 100%;
-  z-index: 1000;
-  order: 100;
-  text-align: center;
-  margin: 0;
+  display: block;
+  margin: auto;
 }
 
 .hidden {
@@ -105,32 +122,52 @@ footer {
 }
 
 .admin-menu {
-  float: right;
+  position: absolute;
+  /* float: right; */
+  /* top: 1em;
+  right: 1em; */
+  /* margin-right: 0; */
+  z-index: 1000;
   height: 100vh;
-  width: 17%;
-  display: flex;
+  width: 96px;
+  /* display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; */
 }
 
 form {
   /* transition pop up or fade in */
-  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
+  align-self: center;
 }
 
 input {
   width: 100%;
-  height: 48px;
+  height: 10vh;
+  border-radius: 10px;
+  margin-bottom: 1em;
 }
 
 button {
   width: 100%;
   height: 48px;
+  border-radius: 10px;
 }
 
 .admin-button {
 
+}
+
+footer {
+  background-color: rgba(32, 34, 36, 1);
+  position: fixed;
+  bottom: 0;
+  min-height: 48px;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  margin: 0;
+  /* overflow: hidden; */
+  display: none;
 }
