@@ -89,12 +89,27 @@ class Cat {
 
      let adminCat = new Cat(adminName, adminImgURL, adminCount);
 
+<<<<<<< HEAD
      for (let i = 0; i < allCats.length; i++) {
          if (allCats[i].name === this.name) {
            allCats.pop();
            allCats.splice(i, 1, adminCat);
          }
        }
+||||||| merged common ancestors
+const cat1 = new Cat("Otto", "images/otto.jpg");
+const cat2 = new Cat("Niko", "images/niko.jpg");
+const cat3 = new Cat("Derp", "images/derp.jpg");
+const cat4 = new Cat("Misty", "images/misty.jpg");
+const cat5 = new Cat("Dirtbags", "images/dirtbags.jpg")
+=======
+// cat name must be one word
+const cat1 = new Cat("Otto", "images/otto.jpg");
+const cat2 = new Cat("Niko", "images/niko.jpg");
+const cat3 = new Cat("Derp", "images/derp.jpg");
+const cat4 = new Cat("Misty", "images/misty.jpg");
+const cat5 = new Cat("Big-Derp", "images/big-derp.jpg")
+>>>>>>> a5719e928f310178d396a9a74acb750853260148
 
 // removes particular cat div
      // document.getElementById(`${this.name}`).remove();
